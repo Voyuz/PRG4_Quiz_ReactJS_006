@@ -11,8 +11,8 @@ export const deleteInovasi = (idInovasi) => {
     return axios.delete(`${REST_API_BASE_URL}delete.php?id=${idInovasi}`);
 };
 
-export const getInovasiById = (idInovasi) => {
-    return axios.delete(`${REST_API_BASE_URL}detail.php?id=${idInovasi}`);
+export const getInovasiById = (idInovasi) => {  
+    return axios.get(`${REST_API_BASE_URL}detail.php?id=${idInovasi}`);
 };
 
 export const updateInovasi = (newInovasi) => {

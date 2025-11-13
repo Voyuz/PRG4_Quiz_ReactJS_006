@@ -8,19 +8,20 @@ function ListInovasiComponent() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
-    useEffect(() => {
-        const fetchInovasi = async () => {
-            try {
-                const response = await listInovasi();
-                setInovasiData(response.data);
-            } catch (error) {
-                console.error("Error fetching inovasi data: ", error);
-                setError("Gagal mengambil data inovasi.");
-            } finally {
+    const fetchInovasi = async () => {
+        try {
+            const response = await listInovasi();
+            setInovasiData(response.data);
+        } catch (error) {
+            console.error("Error fetching inovasi data: ", error);
+            setError("Gagal mengambil data inovasi.");
+        } finally {
                 setLoading(false);
-            }
-        };
+        }
+    };
 
+
+    useEffect(() => {
         fetchInovasi();
     }, []);
 

@@ -27,14 +27,14 @@ function AddInovasiComponent() {
                     const response = await getInovasiById(ino_id);
                     const data = response.data;
 
-                    setJudulInovasi(data.judul_inovasi);
-                    setDeskripsi(data.deskripsi);
-                    setKategori(data.kategori);
-                    setTanggalSubmit(data.tanggal_submit);
-                    setPengusul(data.pengusul);
-                    setUnit(data.unit);
-                    setManfaat(data.manfaat);
-                    setPotensiSaving(data.potensi_savings);
+                    setJudulInovasi(data.ino_judul);
+                    setDeskripsi(data.ino_deskripsi);
+                    setKategori(data.ino_kategori);
+                    setTanggalSubmit(data.ino_tanggalsubmit);
+                    setPengusul(data.ino_pengusul);
+                    setUnit(data.ino_unit);
+                    setManfaat(data.ino_manfaat);
+                    setPotensiSaving(data.ino_potensi_savings);
                 } catch (error) {
                     console.error("Error fetching inovasi data: ", error);
                     setError("Gagal mengambil data inovasi.");
@@ -137,12 +137,18 @@ function AddInovasiComponent() {
                         required
                     />
                 </div>
-                <div class="mb-3">
-                    <label for="kategori" class="form-label">Kategori</label>
-                    <select id="kategori" class="form-select">
-                        <option>- Pilih Kategori -</option>
-                        <option>SS</option>
-                        <option>Non-SS</option>
+                <div className="mb-3">
+                    <label htmlFor="kategori" className="form-label">Kategori</label>
+                    <select
+                        id="kategori"
+                        className="form-select"
+                        value={kategori}
+                        onChange={(e) => setKategori(e.target.value)}
+                        required
+                    >
+                        <option value="">- Pilih Kategori -</option>
+                        <option value="SS">SS</option>
+                        <option value="Non-SS">Non-SS</option>
                     </select>
                 </div>
                 <div className="mb-3">
