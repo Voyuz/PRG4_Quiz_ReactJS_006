@@ -51,7 +51,7 @@ function AddInovasiComponent() {
         setSuccessMessage(null);
 
         try {
-            if (id) {
+            if (ino_id) {
                 const newInovasi = {
                     ino_id: ino_id,
                     ino_judul: judulInovasi,
@@ -87,7 +87,7 @@ function AddInovasiComponent() {
                 };
 
                 await addInovasi(newInovasi);
-                setSuccessMessage("Inovasi berhasil diubah!");
+                setSuccessMessage("Inovasi berhasil ditambahkan!");
                 setDeskripsi("");
                 setKategori("");
                 setTanggalSubmit("");
