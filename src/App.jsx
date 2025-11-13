@@ -12,7 +12,7 @@ function App() {
         <HeaderComponent />
         <div className="flex-grow-1">
           <Routes>
-            <Route path="/tambah-inovasi" element={<AddInovasiComponent />} />
+            <Route path="/tambahh-inovasi" element={<AddInovasiComponent />} />
             <Route path="/edit-inovasi/:ino_id" element={<AddInovasiComponent />} />
             <Route path="/list-inovasi" element={<ListInovasiComponent />} />
           </Routes>
