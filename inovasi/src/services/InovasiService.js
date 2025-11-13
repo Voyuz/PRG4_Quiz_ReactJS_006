@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const REST_API_BASE_URL = "https://api.roniprsty.com/kuis/read.php/";
+const REST_API_BASE_URL = "https://api.roniprsty.com/kuis/";
 
 export const listInovasi = () => axios.get(REST_API_BASE_URL + "read.php");
 export const addInovasi = (newInovasi) => {

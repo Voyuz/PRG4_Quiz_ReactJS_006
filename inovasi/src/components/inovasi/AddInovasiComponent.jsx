@@ -24,7 +24,7 @@ function AddInovasiComponent() {
         if (ino_id) {
             const fetchInovasi = async () => {
                 try {
-                    const response = await getProdutById(ino_id);
+                    const response = await getInovasiById(ino_id);
                     const data = response.data;
 
                     setJudulInovasi(data.judul_inovasi);
