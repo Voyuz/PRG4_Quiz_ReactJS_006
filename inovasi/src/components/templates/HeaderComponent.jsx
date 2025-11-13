@@ -27,7 +27,7 @@ function HeaderComponent() {
                         </li>
                         <li className="navbar-item">
                             <a href="/list-inovasi" className="nav-link">
-                                Produk
+                                Inovasi
                             </a>
                         </li>
                         <div className="nav-item">

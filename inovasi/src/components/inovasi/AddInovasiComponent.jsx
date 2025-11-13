@@ -3,7 +3,7 @@ import {
     addInovasi,
     getInovasiById,
     updateInovasi,
-} from "../../services/InovasiServiceService";
+} from "../../services/InovasiService";
 import { Link, useParams } from "react-router-dom";
 
 function AddInovasiComponent() {

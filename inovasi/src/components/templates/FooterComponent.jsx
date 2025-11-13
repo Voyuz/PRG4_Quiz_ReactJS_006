@@ -18,7 +18,7 @@ function FooterComponent() {
                         Home
                     </a>
                     <a href="/list-inovasi" className="me-4 text-reset">
-                        Produk
+                        Inovasi
                     </a>
                     <a href="/about" className="me-4 text-reset">
                         Tentang

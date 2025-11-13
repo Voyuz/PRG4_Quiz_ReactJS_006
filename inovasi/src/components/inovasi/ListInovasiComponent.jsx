@@ -69,7 +69,7 @@ function ListInovasiComponent() {
     return (
         <div className="container mt-4">
             <h2 className="mb-4">List Inovasi</h2>
-            <Link to="/tambah-produk" className="btn btn-primary mb-3">
+            <Link to="/tambah-inovasi" className="btn btn-primary mb-3">
                 Add Inovasi
             </Link>
             {error && <div className="alert alert-danger">{error}</div>}
@@ -106,7 +106,7 @@ function ListInovasiComponent() {
                                 </td>
                                 <td className="text-center">
                                     <Link
-                                        to={`/edit-produk/${item.ino_id}`}
+                                        to={`/edit-inovasi/${item.ino_id}`}
                                         className="btn btn-warning btn-sm me-2"
                                     >
                                         Edit
@@ -114,7 +114,7 @@ function ListInovasiComponent() {
                                     <button
                                         type="button"
                                         className="btn btn-danger btn-sm"
-                                        onClick={() => handleDelete(item.id)}
+                                        onClick={() => handleDelete(item.ino_id)}
                                     >
                                         Delete
                                     </button>
